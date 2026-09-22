@@ -1,0 +1,35 @@
+  <header class="site-header on-dark">
+    <div class="container header-inner">
+      <a class="brand" href="{{root}}index.html">
+        <img src="{{root}}assets/logo-128.webp" srcset="{{root}}assets/logo-128.webp 2x, {{root}}assets/logo-192.webp 3x" width="255" height="64" alt="Pathfinder Driveways &amp; Construction (Private) Limited">
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="{{root}}index.html"{{current:home}}>Home</a></li>
+          <li><a href="{{root}}about/index.html"{{current:about}}>About</a></li>
+          <li><a href="{{root}}services/index.html"{{current:services}}>Services</a></li>
+          <li><a href="{{root}}projects/index.html"{{current:projects}}>Projects</a></li>
+          <li><a href="{{root}}products/index.html"{{current:products}}>Products</a></li>
+          <li><a href="{{root}}contact/index.html"{{current:contact}}>Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--primary btn--sm header-cta" href="{{quote_href}}"><span class="header-cta__long">Get a&nbsp;</span>Quote</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="mobile-nav on-dark" id="mobile-nav" hidden>
+      <nav aria-label="Mobile">
+        <ul>
+          <li><a href="{{root}}index.html"{{current:home}}>Home</a></li>
+          <li><a href="{{root}}about/index.html"{{current:about}}>About</a></li>
+          <li><a href="{{root}}services/index.html"{{current:services}}>Services</a></li>
+          <li><a href="{{root}}projects/index.html"{{current:projects}}>Projects</a></li>
+          <li><a href="{{root}}products/index.html"{{current:products}}>Products</a></li>
+          <li><a href="{{root}}contact/index.html"{{current:contact}}>Contact</a></li>
+        </ul>
+        <a class="btn btn--primary" href="{{quote_href}}">Get a Quote</a>
+        <p class="mobile-nav__contact">WhatsApp <a href="{{wa_link}}" data-wa target="_blank" rel="noopener">{{wa_display}}</a> · Office <a href="tel:+263242788113">0242&nbsp;788&nbsp;113</a></p>
+      </nav>
+    </div>
+  </header>

@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+
+# Local-only files (kept out of the public repository)
+CLIENT-CHECKLIST.md
+*.log

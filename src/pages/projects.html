@@ -1,0 +1,59 @@
+<!--
+{"title": "Projects | Completed Paving & Tarmac Work | Pathfinder",
+ "description": "Completed paving, tarmac and construction projects by Pathfinder Driveways & Construction, including Winston Park, Adelaide Park, Kambuzuma and Greystone Park.",
+ "path": "projects/index.html", "nav": "projects"}
+-->
+    <section class="page-hero on-dark" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow">Our projects</p>
+        <h1 id="page-title">Completed work, photographed on site</h1>
+        <p class="lead">Paving, tarmac and construction projects for homeowners, businesses and institutions.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title" class="visually-hidden">Project gallery</h2>
+        <div class="filters" role="group" aria-label="Filter projects by service">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="paving" aria-pressed="false">Paving</button>
+          <button class="filter-btn" type="button" data-filter="tarmac" aria-pressed="false">Tarmac</button>
+          <button class="filter-btn" type="button" data-filter="construction" aria-pressed="false">Construction</button>
+          <button class="filter-btn" type="button" data-filter="renovations" data-noun="Renovation" aria-pressed="false">Renovations</button>
+        </div>
+        <p class="visually-hidden" role="status" aria-live="polite" id="filter-status"></p>
+
+        <ul class="grid grid--3 grid--list project-grid">
+{{projects}}
+        </ul>
+
+        <div class="empty-state" id="projects-empty" hidden>
+          <h3 id="empty-title">No projects in this category yet</h3>
+          <p>We're still adding photographs of recent work to this gallery. Ask us for examples of projects similar to yours.</p>
+          <a class="btn btn--primary" id="empty-cta" href="{{root}}contact/index.html#enquiry">Ask for Examples</a>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+      <button class="project-dialog__close" type="button" data-close-dialog aria-label="Close project details">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+      <div class="project-dialog__main"><img id="dialog-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" width="1000" height="667"></div>
+      <ul class="project-dialog__thumbs" id="dialog-thumbs" aria-label="More photos"></ul>
+      <div class="project-dialog__body">
+        <p class="tag" id="dialog-tag"></p>
+        <h2 id="dialog-title">Project details</h2>
+        <dl class="project-dialog__facts">
+          <div><dt>Service</dt><dd id="dialog-service"></dd></div>
+          <div id="dialog-location-row"><dt>Location</dt><dd id="dialog-location"></dd></div>
+        </dl>
+        <p id="dialog-desc"></p>
+        <div class="btn-row">
+          <a class="btn btn--primary" id="dialog-cta" href="{{root}}contact/index.html#enquiry">Request a Similar Quote</a>
+          <a class="btn btn--secondary" href="{{wa_link}}" data-wa target="_blank" rel="noopener"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp Us<span class="visually-hidden"> (opens WhatsApp)</span></a>
+        </div>
+      </div>
+    </dialog>
+
+{{> cta-band}}
