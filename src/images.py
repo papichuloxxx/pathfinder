@@ -62,7 +62,6 @@ IMAGES = [
     ('proj-good-hope-3', 'recent-work/good-hope/07.jpg', PROJECT, [480, 861], (0.5, 0.5), None),
     ('proj-good-hope-4', 'recent-work/good-hope/10.jpg', PROJECT, [480, 706], (0.5, 0.5), None),
 
-    ('proj-winston-park', '2025/05/PATHFINDER-4.png', PROJECT, [480, 750], (0.5, 0.5), BAND),
     ('proj-adelaide-park', '2025/04/PATHFINDER.png', PROJECT, [480, 750], (0.5, 0.5), BAND),
     ('proj-kambuzuma', '2025/04/IMG-20250410-WA0002.jpg', PROJECT, [480, 735], (0.5, 0.6), None),
     ('proj-presbyterian-paving', '2025/06/PATHFINDER-5.png', PROJECT, [480, 750], (0.5, 0.5), BAND),

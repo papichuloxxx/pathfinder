@@ -342,7 +342,7 @@
       if (opener) opener.focus();
     });
 
-    // Open straight to a project when arriving from a "View Project" link, e.g. projects/#winston-park
+    // Open straight to a project when arriving from a "View Project" link, e.g. projects/#good-hope
     var target = window.location.hash && document.getElementById(window.location.hash.slice(1));
     if (target && target.hasAttribute('data-project')) {
       var li = target.closest('li');

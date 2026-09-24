@@ -69,22 +69,6 @@
     "description": "A tarmac driveway laid and compacted through a landscaped garden."
   },
   {
-    "id": "winston-park",
-    "title": "Winston Park",
-    "service": "3D arrow paver installation",
-    "location": "Marondera, Zimbabwe",
-    "categories": [
-      "paving"
-    ],
-    "images": [
-      {
-        "name": "proj-winston-park",
-        "alt": "Red, grey and charcoal 3D arrow pavers at Winston Park"
-      }
-    ],
-    "description": "Three-colour 3D arrow pavers laid to create a bold, three-dimensional pattern."
-  },
-  {
     "id": "geometric-courtyard",
     "title": "Geometric Courtyard",
     "service": "Courtyard paving",
