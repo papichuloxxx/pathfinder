@@ -41,12 +41,36 @@ SIZES = {
 }
 CATEGORY_LABELS = {'paving': 'Paving', 'tarmac': 'Tarmac', 'construction': 'Construction', 'renovations': 'Renovations'}
 
+# Structured data. Services and products here must match what the pages say.
+SERVICES = [
+    ('Brick paving (supply & fix)', 'services/#paving'),
+    ('Concrete paving', 'services/#paving'),
+    ('Labour-only paving', 'services/#paving'),
+    ('Road construction', 'services/#tarmac'),
+    ('Asphalt paving', 'services/#tarmac'),
+    ('Tarmac resurfacing', 'services/#tarmac'),
+    ('Pothole patching', 'services/#tarmac'),
+    ('Drainage installation', 'services/#tarmac'),
+    ('Building construction and renovations', 'services/#construction'),
+]
+PRODUCTS = ['Interlocking pavers', '3D arrow pavers', 'Holland pavers', '3D diamond pavers', 'Hexagonal pavers',
+            'Bone & dog pavers', 'Star brick pavers', 'Common bricks']
+CRUMBS = {'services': 'Services', 'products': 'Products', 'projects': 'Projects', 'about': 'About', 'contact': 'Contact'}
+
+
 def schema(site_url):
-    return {
+    """The business, for the home page. Other pages point at it by @id."""
+    biz = site_url + '#business'
+    return [{
         '@context': 'https://schema.org',
         '@type': 'HomeAndConstructionBusiness',
+        '@id': biz,
         'name': 'Pathfinder Driveways & Construction',
+        'legalName': 'Pathfinder Driveways & Construction (Private) Limited',
+        'description': 'Zimbabwean paving and construction company based in Harare: brick and concrete paving, road '
+                       'construction, asphalt and tarmac work, drainage, building work, and locally made pavers and bricks.',
         'url': site_url,
+        'logo': site_url + 'assets/logo-192.png',
         'image': site_url + 'assets/img/og-image.jpg',
         'telephone': '+263242788113',
         'email': ENQUIRY_EMAIL,
@@ -57,12 +81,59 @@ def schema(site_url):
             'addressLocality': 'Harare',
             'addressCountry': 'ZW',
         },
+        'areaServed': [{'@type': 'City', 'name': 'Harare'}, {'@type': 'Country', 'name': 'Zimbabwe'}],
+        'contactPoint': [{'@type': 'ContactPoint', 'contactType': 'sales', 'telephone': '+' + WHATSAPP_NUMBER,
+                          'areaServed': 'ZW', 'availableLanguage': 'English'}],
+        'hasOfferCatalog': {
+            '@type': 'OfferCatalog',
+            'name': 'Paving, construction and products',
+            'itemListElement': [
+                {'@type': 'OfferCatalog', 'name': 'Services', 'itemListElement': [
+                    {'@type': 'Offer', 'itemOffered': {'@type': 'Service', 'name': n, 'url': site_url + u}}
+                    for n, u in SERVICES]},
+                {'@type': 'OfferCatalog', 'name': 'Pavers and bricks', 'itemListElement': [
+                    {'@type': 'Offer', 'itemOffered': {'@type': 'Product', 'name': n, 'url': site_url + 'products/'}}
+                    for n in PRODUCTS]},
+            ],
+        },
         'sameAs': [
             'https://www.facebook.com/pathdrive',
             'https://www.instagram.com/pathfinderdrivewayscon/',
             'https://www.linkedin.com/company/80231533/',
         ],
-    }
+    }, {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        '@id': site_url + '#website',
+        'name': 'Pathfinder Driveways & Construction',
+        'url': site_url,
+        'publisher': {'@id': biz},
+    }]
+
+
+def page_schema(meta, body, site_url, canonical):
+    """Breadcrumbs for inner pages, plus the FAQ where a page has one."""
+    out = []
+    if meta['nav'] in CRUMBS:
+        out.append({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            'itemListElement': [
+                {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': site_url},
+                {'@type': 'ListItem', 'position': 2, 'name': CRUMBS[meta['nav']], 'item': canonical},
+            ],
+        })
+    faq = re.findall(r'<summary>(.*?)</summary>\s*<p>(.*?)</p>', body, re.S)
+    if faq:
+        def text(s):
+            return html.unescape(re.sub(r'<[^>]+>', '', s)).strip()
+        out.append({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            'mainEntity': [{'@type': 'Question', 'name': text(q),
+                            'acceptedAnswer': {'@type': 'Answer', 'text': text(a)}} for q, a in faq],
+        })
+    return out
 
 
 def read(*parts):
@@ -200,8 +271,10 @@ def build(local=False, pages=False, base='/', site_url=SITE_URL, noindex=False):
             d = image_data(meta['preload'], root)
             head.append(f'  <link rel="preload" as="image" href="{d["src"]}" imagesrcset="{d["srcset"]}" '
                         f'imagesizes="100vw" fetchpriority="high">')
-        if meta.get('schema'):
-            head.append('  <script type="application/ld+json">' + json.dumps(schema(site_url), ensure_ascii=False) + '</script>')
+        blocks = (schema(site_url) if meta.get('schema') else []) + page_schema(meta, body, site_url, canonical)
+        if blocks:
+            data = blocks[0] if len(blocks) == 1 else blocks
+            head.append('  <script type="application/ld+json">' + json.dumps(data, ensure_ascii=False).replace('</', '<\\/') + '</script>')
         if meta.get('noindex') or noindex:
             head.append('  <meta name="robots" content="noindex">')
 
