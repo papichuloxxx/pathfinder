@@ -1,128 +1,387 @@
 [
   {
-    "id": "winston-park",
-    "title": "Winston Park",
-    "service": "3D arrow paver installation",
-    "location": "Marondera, Zimbabwe",
-    "categories": ["paving"],
-    "images": [{"name": "proj-winston-park", "alt": "Red, grey and charcoal 3D arrow pavers at Winston Park"}],
-    "description": "Three-colour 3D arrow pavers laid to create a bold, three-dimensional pattern."
-  },
-  {
-    "id": "adelaide-park",
-    "title": "Adelaide Park",
-    "service": "Paving installation",
+    "id": "presbyterian-church",
+    "title": "Presbyterian Church in Southern Africa",
+    "service": "Paving and tarmac car park",
     "location": "Zimbabwe",
-    "categories": ["paving"],
-    "images": [{"name": "proj-adelaide-park", "alt": "Charcoal, grey and white interlocking pavers in a chevron pattern at Adelaide Park"}],
-    "description": "Interlocking pavers in charcoal, grey and white, laid in a repeating chevron pattern."
-  },
-  {
-    "id": "kambuzuma",
-    "title": "Kambuzuma",
-    "service": "Paver driveway installation",
-    "location": "Harare, Zimbabwe",
-    "categories": ["paving"],
-    "images": [{"name": "proj-kambuzuma", "alt": "Long charcoal herringbone paver driveway with a light border in Kambuzuma"}],
-    "description": "A long charcoal paver driveway laid in herringbone and finished with a contrasting light-grey border."
+    "categories": [
+      "paving",
+      "tarmac"
+    ],
+    "images": [
+      {
+        "name": "proj-presbyterian-2",
+        "alt": "Rollers compacting new tarmac in front of the Presbyterian church"
+      },
+      {
+        "name": "proj-presbyterian-1",
+        "alt": "Newly marked parking bays on the tarmac car park beside the church"
+      },
+      {
+        "name": "proj-presbyterian-4",
+        "alt": "White bay markings meeting at a lamp post on the new tarmac car park"
+      },
+      {
+        "name": "proj-presbyterian-3",
+        "alt": "Tarmac access road with painted markings between church buildings"
+      },
+      {
+        "name": "proj-presbyterian-5",
+        "alt": "Pedestrian crossing markings on the new tarmac outside a church hall"
+      },
+      {
+        "name": "proj-presbyterian-6",
+        "alt": "Pathfinder crew and rollers finishing the tarmac car park"
+      },
+      {
+        "name": "proj-presbyterian-7",
+        "alt": "Marked tarmac parking bays meeting a paved edge under trees"
+      },
+      {
+        "name": "proj-presbyterian-paving",
+        "alt": "Close-up of the paving laid at the church premises"
+      }
+    ],
+    "description": "Paving and a tarmac car park for church premises, finished with painted bays and markings."
   },
   {
     "id": "greystone-park",
     "title": "Greystone Park",
     "service": "Tarmac surfacing",
     "location": "Harare, Zimbabwe",
-    "categories": ["tarmac"],
-    "images": [{"name": "proj-greystone-park", "alt": "Newly laid tarmac surface at Greystone Park"}],
-    "description": "A new tarmac surface, laid and compacted."
-  },
-  {
-    "id": "presbyterian-church",
-    "title": "Presbyterian Church in Southern Africa",
-    "service": "Paving and tarmac car park",
-    "location": "Zimbabwe",
-    "categories": ["paving", "tarmac"],
-    "images": [
-      {"name": "proj-presbyterian-tarmac", "alt": "Finished tarmac car park at the Presbyterian Church in Southern Africa"},
-      {"name": "proj-presbyterian-paving", "alt": "Interlocking paving at the Presbyterian Church in Southern Africa"}
+    "categories": [
+      "tarmac"
     ],
-    "description": "Paving and a tarmac car park for church premises."
-  },
-  {
-    "id": "car-park-surfacing",
-    "title": "Car Park Surfacing",
-    "service": "Tarmac car park",
-    "location": "",
-    "categories": ["tarmac"],
     "images": [
-      {"name": "proj-car-park", "alt": "Pathfinder crew spreading tarmac across a car park with shade ports"},
-      {"name": "proj-car-park-2", "alt": "Roller compacting new tarmac in the car park"}
+      {
+        "name": "proj-greystone-1",
+        "alt": "Roller compacting a new tarmac driveway through a landscaped garden at Greystone Park"
+      },
+      {
+        "name": "proj-greystone-2",
+        "alt": "Pedestrian roller on the fresh tarmac driveway beside a rockery garden"
+      },
+      {
+        "name": "proj-greystone-3",
+        "alt": "Pathfinder workers raking hot tarmac on the Greystone Park driveway"
+      }
     ],
-    "description": "Our crew spreading and compacting tarmac across a covered car park."
+    "description": "A tarmac driveway laid and compacted through a landscaped garden."
   },
   {
-    "id": "tarmac-driveway",
-    "title": "Residential Tarmac Driveway",
-    "service": "Tarmac driveway",
-    "location": "",
-    "categories": ["tarmac"],
+    "id": "winston-park",
+    "title": "Winston Park",
+    "service": "3D arrow paver installation",
+    "location": "Marondera, Zimbabwe",
+    "categories": [
+      "paving"
+    ],
     "images": [
-      {"name": "proj-tarmac-driveway", "alt": "Crew raking fresh tarmac on a driveway through a landscaped garden"},
-      {"name": "proj-tarmac-driveway-2", "alt": "Roller compacting the new tarmac driveway"}
+      {
+        "name": "proj-winston-park",
+        "alt": "Red, grey and charcoal 3D arrow pavers at Winston Park"
+      }
     ],
-    "description": "A new tarmac driveway laid and rolled through a landscaped garden."
-  },
-  {
-    "id": "patterned-courtyard",
-    "title": "Patterned Courtyard",
-    "service": "Courtyard paving",
-    "location": "",
-    "categories": ["paving"],
-    "images": [{"name": "proj-courtyard", "alt": "Red and charcoal pavers in a diamond pattern across a residential courtyard"}],
-    "description": "Red and charcoal pavers laid in a diamond pattern across a residential courtyard."
-  },
-  {
-    "id": "residential-walkway",
-    "title": "Residential Walkway",
-    "service": "Walkway paving",
-    "location": "",
-    "categories": ["paving"],
-    "images": [{"name": "proj-walkway", "alt": "Charcoal herringbone walkway with a light-grey border and inset diamonds beside a brick house"}],
-    "description": "A charcoal herringbone walkway with a light-grey border and inset diamond detail."
-  },
-  {
-    "id": "herringbone-driveway",
-    "title": "Herringbone Driveway",
-    "service": "Driveway paving",
-    "location": "",
-    "categories": ["paving"],
-    "images": [{"name": "proj-herringbone", "alt": "Red and charcoal pavers in alternating herringbone bands along a driveway"}],
-    "description": "Red and charcoal pavers laid in alternating herringbone bands with a matching edge."
+    "description": "Three-colour 3D arrow pavers laid to create a bold, three-dimensional pattern."
   },
   {
     "id": "geometric-courtyard",
     "title": "Geometric Courtyard",
     "service": "Courtyard paving",
     "location": "",
-    "categories": ["paving"],
-    "images": [{"name": "proj-geometric", "alt": "Bold red and black geometric paving pattern across an open courtyard"}],
+    "categories": [
+      "paving"
+    ],
+    "images": [
+      {
+        "name": "proj-geometric",
+        "alt": "Bold red and black geometric paving pattern across an open courtyard"
+      }
+    ],
     "description": "A bold red and black geometric pattern laid across an open courtyard."
+  },
+  {
+    "id": "patterned-courtyard",
+    "title": "Patterned Courtyard",
+    "service": "Courtyard paving",
+    "location": "",
+    "categories": [
+      "paving"
+    ],
+    "images": [
+      {
+        "name": "proj-courtyard",
+        "alt": "Red and charcoal pavers in a diamond pattern across a residential courtyard"
+      }
+    ],
+    "description": "Red and charcoal pavers laid in a diamond pattern across a residential courtyard."
+  },
+  {
+    "id": "herringbone-driveway",
+    "title": "Herringbone Driveway",
+    "service": "Driveway paving",
+    "location": "",
+    "categories": [
+      "paving"
+    ],
+    "images": [
+      {
+        "name": "proj-herringbone",
+        "alt": "Red and charcoal pavers in alternating herringbone bands along a driveway"
+      }
+    ],
+    "description": "Red and charcoal pavers laid in alternating herringbone bands with a matching edge."
+  },
+  {
+    "id": "kamfinsa",
+    "title": "Kamfinsa",
+    "service": "Tarmac surfacing",
+    "location": "Kamfinsa, Harare",
+    "categories": [
+      "tarmac"
+    ],
+    "images": [
+      {
+        "name": "proj-kamfinsa-1",
+        "alt": "Pathfinder \"Paving done by\" signboard beside tarmac works at a Kamfinsa shopping centre"
+      },
+      {
+        "name": "proj-kamfinsa-2",
+        "alt": "Finished tarmac with traffic cones outside shops in Kamfinsa"
+      },
+      {
+        "name": "proj-kamfinsa-4",
+        "alt": "New tarmac edge alongside a raised planter at the shopping centre"
+      },
+      {
+        "name": "proj-kamfinsa-3",
+        "alt": "Pathfinder crew laying tarmac in front of the shops"
+      }
+    ],
+    "description": "Tarmac surfacing at a Kamfinsa shopping centre, with our signboard on site."
+  },
+  {
+    "id": "cabs",
+    "title": "CABS",
+    "service": "Tarmac surfacing",
+    "location": "",
+    "categories": [
+      "tarmac"
+    ],
+    "images": [
+      {
+        "name": "proj-cabs-1",
+        "alt": "Pedestrian roller compacting new tarmac at the entrance to CABS premises"
+      },
+      {
+        "name": "proj-cabs-2",
+        "alt": "Fresh tarmac leading to the CABS sign at the site entrance"
+      },
+      {
+        "name": "proj-cabs-3",
+        "alt": "Pathfinder worker beside the newly surfaced CABS entrance"
+      }
+    ],
+    "description": "Tarmac surfacing at the entrance to CABS premises."
+  },
+  {
+    "id": "kambuzuma",
+    "title": "Kambuzuma",
+    "service": "Paver driveway installation",
+    "location": "Harare, Zimbabwe",
+    "categories": [
+      "paving"
+    ],
+    "images": [
+      {
+        "name": "proj-kambuzuma",
+        "alt": "Long charcoal herringbone paver driveway with a light border in Kambuzuma"
+      }
+    ],
+    "description": "A long charcoal paver driveway laid in herringbone and finished with a contrasting light-grey border."
+  },
+  {
+    "id": "residential-walkway",
+    "title": "Residential Walkway",
+    "service": "Walkway paving",
+    "location": "",
+    "categories": [
+      "paving"
+    ],
+    "images": [
+      {
+        "name": "proj-walkway",
+        "alt": "Charcoal herringbone walkway with a light-grey border and inset diamonds beside a brick house"
+      }
+    ],
+    "description": "A charcoal herringbone walkway with a light-grey border and inset diamond detail."
   },
   {
     "id": "striped-driveway",
     "title": "Striped Driveway",
     "service": "Driveway paving",
     "location": "",
-    "categories": ["paving"],
-    "images": [{"name": "proj-diagonal", "alt": "Red and grey pavers laid in diagonal bands along a sloping driveway"}],
+    "categories": [
+      "paving"
+    ],
+    "images": [
+      {
+        "name": "proj-diagonal",
+        "alt": "Red and grey pavers laid in diagonal bands along a sloping driveway"
+      }
+    ],
     "description": "Red and grey pavers laid in diagonal bands along a sloping driveway."
+  },
+  {
+    "id": "kingsmead-road",
+    "title": "Kingsmead Road",
+    "service": "Paver driveway installation",
+    "location": "Borrowdale, Harare",
+    "categories": [
+      "paving"
+    ],
+    "images": [
+      {
+        "name": "proj-kingsmead-1",
+        "alt": "Grey herringbone paver driveway with concrete kerbs on Kingsmead Road, Borrowdale"
+      },
+      {
+        "name": "proj-kingsmead-2",
+        "alt": "Close view of the grey herringbone pavers and kerb edging"
+      }
+    ],
+    "description": "Grey pavers laid in herringbone along a driveway, finished with concrete kerbs."
+  },
+  {
+    "id": "tarmac-driveway",
+    "title": "Residential Tarmac Driveway",
+    "service": "Tarmac driveway",
+    "location": "",
+    "categories": [
+      "tarmac"
+    ],
+    "images": [
+      {
+        "name": "proj-tarmac-driveway",
+        "alt": "Crew raking fresh tarmac on a driveway through a landscaped garden"
+      },
+      {
+        "name": "proj-tarmac-driveway-2",
+        "alt": "Roller compacting the new tarmac driveway"
+      }
+    ],
+    "description": "A new tarmac driveway laid and rolled through a landscaped garden."
+  },
+  {
+    "id": "adelaide-park",
+    "title": "Adelaide Park",
+    "service": "Paving installation",
+    "location": "Zimbabwe",
+    "categories": [
+      "paving"
+    ],
+    "images": [
+      {
+        "name": "proj-adelaide-park",
+        "alt": "Charcoal, grey and white interlocking pavers in a chevron pattern at Adelaide Park"
+      }
+    ],
+    "description": "Interlocking pavers in charcoal, grey and white, laid in a repeating chevron pattern."
+  },
+  {
+    "id": "car-park-surfacing",
+    "title": "Car Park Surfacing",
+    "service": "Tarmac car park",
+    "location": "",
+    "categories": [
+      "tarmac"
+    ],
+    "images": [
+      {
+        "name": "proj-car-park",
+        "alt": "Pathfinder crew spreading tarmac across a car park with shade ports"
+      },
+      {
+        "name": "proj-car-park-2",
+        "alt": "Roller compacting new tarmac in the car park"
+      }
+    ],
+    "description": "Our crew spreading and compacting tarmac across a covered car park."
+  },
+  {
+    "id": "coronation",
+    "title": "Coronation",
+    "service": "Interlocking paving",
+    "location": "",
+    "categories": [
+      "paving"
+    ],
+    "images": [
+      {
+        "name": "proj-coronation-1",
+        "alt": "Sunlit access road finished in sand-coloured interlocking pavers"
+      },
+      {
+        "name": "proj-coronation-3",
+        "alt": "Close view of the sand-coloured interlocking pavers"
+      },
+      {
+        "name": "proj-coronation-2",
+        "alt": "Newly laid interlocking pavers along the road edge"
+      },
+      {
+        "name": "proj-coronation-4",
+        "alt": "Pathfinder workers laying pavers along a kerb"
+      },
+      {
+        "name": "proj-coronation-5",
+        "alt": "A Pathfinder paver fitting the edge of the new paving"
+      }
+    ],
+    "description": "Sand-coloured interlocking pavers laid along a tree-lined access road."
+  },
+  {
+    "id": "good-hope",
+    "title": "Good Hope",
+    "service": "3D arrow paver installation",
+    "location": "",
+    "categories": [
+      "paving"
+    ],
+    "images": [
+      {
+        "name": "proj-good-hope-2",
+        "alt": "Grey and white 3D arrow pavers being laid in a residential yard"
+      },
+      {
+        "name": "proj-good-hope-4",
+        "alt": "Close view of the 3D arrow paver pattern against a boundary wall"
+      },
+      {
+        "name": "proj-good-hope-1",
+        "alt": "3D arrow paving in progress beside a swimming pool"
+      },
+      {
+        "name": "proj-good-hope-3",
+        "alt": "3D arrow paving across the yard, with the Pathfinder bakkie behind"
+      }
+    ],
+    "description": "Grey and white 3D arrow pavers laid around a residential pool area."
   },
   {
     "id": "building-site-works",
     "title": "Building Site Works",
     "service": "Building construction",
     "location": "",
-    "categories": ["construction"],
-    "images": [{"name": "proj-site-works", "alt": "Backhoe loader carrying out earthworks beside a new building"}],
+    "categories": [
+      "construction"
+    ],
+    "images": [
+      {
+        "name": "proj-site-works",
+        "alt": "Backhoe loader carrying out earthworks beside a new building"
+      }
+    ],
     "description": "Earthworks and groundwork under way on a building project."
   }
 ]

@@ -13,7 +13,7 @@ static-site/                  (this is the GitHub repository)
     ├── layout.html      the <head> and page shell
     ├── build.py         assembles site/ from the above
     ├── logo.py          makes the navy/gold web logo and favicons from source/Mainlogo.jpeg
-    └── images.py        crops, colour-corrects and exports all photos from the WordPress backup (not in the repo)
+    └── images.py        crops, colour-corrects and exports all photos from the WordPress backup and ../recent-work/ (neither is in the repo)
 ```
 
 ## Preview
@@ -29,7 +29,7 @@ To preview by double-clicking `site/index.html` instead, build with `python src/
 | Home | Hero → trust bar → 4 services → 4 featured projects → Why Pathfinder → paver range → about → testimonials → CTA → contact + enquiry form |
 | About | Story, vision and mission, values |
 | Services | Paving, Tarmac, Building & Renovations, Paver Manufacturing. Each has a quote button and a link to the matching projects |
-| Projects | 13 real projects, filterable by All / Paving / Tarmac / Construction / Renovations. "View Project" opens a larger view |
+| Projects | 18 real projects, best-looking first, filterable by All / Paving / Tarmac / Construction / Renovations. "View Project" opens a larger view |
 | Products | Supply only vs supply and fix, 6 paver types with *Enquire Now*, common bricks, FAQ |
 | Contact | WhatsApp (main line), office phone, email, address and directions, enquiry form |
 | Privacy | Short privacy notice, linked from the form and the footer |
@@ -98,7 +98,7 @@ The form follows the proposal:
 You need Python 3 with Pillow installed (`pip install pillow`).
 
 ```sh
-python src/images.py   # only when photos change: rebuilds site/assets/img/ from ../wpress_extracted/uploads/
+python src/images.py   # only when photos change: rebuilds site/assets/img/ from ../wpress_extracted/uploads/ and ../recent-work/
 python src/build.py    # always: rebuilds every page in site/ and writes site/.htaccess
 ```
 
