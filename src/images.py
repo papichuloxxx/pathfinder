@@ -77,7 +77,8 @@ IMAGES = [
     ('proj-diagonal', '2025/05/WhatsApp-Image-2025-03-12-at-09.52.22_8adc8c32.jpg', PROJECT, [480, 720], (0.5, 0.5), None),
     ('proj-site-works', '2021/03/20180105_131935-e1524129849930.jpg', PROJECT, [480, 1200], (0.55, 0.5), None),
 
-    ('prod-interlocking', '2025/04/IMG-20250405-WA0007.jpg', CARD, [480, 765], (0.5, 0.62), None),
+    ('prod-interlocking', 'recent-work/pavers/interlocking.jpg', CARD, [480, 600], (0.5, 0.5), None),
+    ('prod-3d-arrow', 'recent-work/pavers/3d-arrow.jpg', CARD, [480, 736], (0.5, 0.6), None),
     ('prod-holland', '2025/04/IMG-20250415-WA0004.jpg', CARD, [480, 765], (0.5, 0.45), None),
     ('prod-3d-diamond', 'recent-work/pavers/3d-diamond.jpg', CARD, [480, 750], (0.5, 0.6), None),
     ('prod-hexagonal', '2025/04/IMG-20250405-WA0017.jpg', CARD, [480, 765], (0.5, 0.62), None),
