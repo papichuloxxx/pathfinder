@@ -35,8 +35,8 @@
   var waBase = waLinks.length ? waLinks[0].getAttribute('href').split('?')[0] : '';
   var waDefault = document.body.getAttribute('data-wa-topic') || '';
   var WA_TOPICS = {
-    paving: 'paving', tarmac: 'tarmac construction', construction: 'building or renovation work',
-    renovations: 'renovation work', pavers: 'pavers', other: ''
+    paving: 'paving', tarmac: 'road or tarmac work', construction: 'building or renovation work',
+    renovations: 'renovation work', pavers: 'pavers or bricks', labour: 'labour-only work', other: ''
   };
   function setWaTopic(topic) {
     var text = 'Hello Pathfinder, I would like a quote for ' + (topic || 'my project') + '.';
@@ -75,8 +75,9 @@
   /* ---------- Enquiry form ---------- */
   var form = document.querySelector('.enquiry-form');
   var SERVICE_LABELS = {
-    paving: 'Paving', tarmac: 'Tarmac construction', construction: 'Building & renovations',
-    renovations: 'Building & renovations', pavers: 'Pavers (supply only)', other: 'Something else'
+    paving: 'Paving', tarmac: 'Roads, tarmac & repairs', construction: 'Building & renovations',
+    renovations: 'Building & renovations', pavers: 'Pavers & bricks (supply only)', labour: 'Labour only',
+    other: 'Something else'
   };
 
   function focusFirstField() {

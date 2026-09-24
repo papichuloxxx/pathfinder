@@ -21,9 +21,10 @@ const SITE_SPAN     = 3600;   // ...every hour (caps a flood even if visitor IPs
 const MAX_BYTES     = 20000;  // largest request accepted
 const SERVICES = [
     'paving'       => 'Paving',
-    'tarmac'       => 'Tarmac construction',
+    'tarmac'       => 'Roads, tarmac & repairs',
     'construction' => 'Building & renovations',
-    'pavers'       => 'Pavers (supply only)',
+    'pavers'       => 'Pavers & bricks (supply only)',
+    'labour'       => 'Labour only',
     'other'        => 'Something else',
 ];
 // ------------------------------------------------------------------------------------------------
