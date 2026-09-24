@@ -3,7 +3,7 @@
     "id": "presbyterian-church",
     "title": "Presbyterian Church in Southern Africa",
     "service": "Paving and tarmac car park",
-    "location": "Zimbabwe",
+    "location": "Highlands, Harare",
     "categories": [
       "paving",
       "tarmac"
@@ -164,7 +164,7 @@
     "id": "cabs",
     "title": "CABS",
     "service": "Tarmac surfacing",
-    "location": "",
+    "location": "Highlands, Harare",
     "categories": [
       "tarmac"
     ],
@@ -312,7 +312,7 @@
     "id": "coronation",
     "title": "Coronation",
     "service": "Interlocking paving",
-    "location": "",
+    "location": "Greendale, Harare",
     "categories": [
       "paving"
     ],
