@@ -53,7 +53,7 @@ def schema(site_url):
         'foundingDate': '1998',
         'address': {
             '@type': 'PostalAddress',
-            'streetAddress': 'No. 5 Partner House, Eastlea Shops',
+            'streetAddress': 'No. 5 Partmac House, Eastlea Shops',
             'addressLocality': 'Harare',
             'addressCountry': 'ZW',
         },
