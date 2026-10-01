@@ -17,7 +17,7 @@ OUT = os.path.normpath(os.path.join(HERE, '..', 'site', 'assets', 'img'))
 
 HERO, CARD, PROJECT = 16 / 9, 4 / 3, 3 / 2
 
-# name, source (relative to uploads), aspect, widths, focus (x, y), optional pre-crop box
+# name, source (relative to uploads), aspect (None keeps the full frame), widths, focus (x, y), optional pre-crop box
 # The PATHFINDER-*.png sources are the company's social graphics; the pre-crop keeps only
 # the photo band between the logo header and the contact-details footer.
 BAND = (0, 240, 1080, 740)
@@ -33,9 +33,9 @@ IMAGES = [
     ('mfg-yard', '2025/04/IMG-20250405-WA0026.jpg', CARD, [480, 800, 1020], (0.5, 0.5), None),
 
     # Recent work (September 2026 photos; Presbyterian replaced October 2026). Each project's best photo comes first.
-    ('proj-presbyterian-1', 'recent-work/presbyterian-new/02.jpg', PROJECT, [480, 756], (0.5, 0.5), None),
-    ('proj-presbyterian-2', 'recent-work/presbyterian-new/01.jpg', PROJECT, [480, 810], (0.5, 0.45), None),
-    ('proj-presbyterian-3', 'recent-work/presbyterian-new/03.jpg', PROJECT, [480, 810], (0.5, 0.55), None),
+    ('proj-presbyterian-1', 'recent-work/presbyterian-new/02.jpg', None, [480, 756], (0.5, 0.5), None),
+    ('proj-presbyterian-2', 'recent-work/presbyterian-new/01.jpg', None, [480, 810], (0.5, 0.5), None),
+    ('proj-presbyterian-3', 'recent-work/presbyterian-new/03.jpg', None, [480, 810], (0.5, 0.5), None),
     ('proj-greystone-1', 'recent-work/greystone-park/02.jpg', PROJECT, [480, 1008], (0.5, 0.5), None),
     ('proj-greystone-2', 'recent-work/greystone-park/03.jpg', PROJECT, [480, 1008], (0.5, 0.5), None),
     ('proj-greystone-3', 'recent-work/greystone-park/01.jpg', PROJECT, [480, 1008], (0.5, 0.5), None),
@@ -112,10 +112,11 @@ def main():
         im = ImageOps.exif_transpose(Image.open(path)).convert('RGB')
         if box:
             im = im.crop(box)
-        im = grade(crop_to(im, aspect, focus))
+        im = grade(crop_to(im, aspect, focus) if aspect else im)
+        ratio = aspect or im.width / im.height
         made = []
         for w in sorted(set(min(w, im.width) for w in widths)):
-            out = im.resize((w, round(w / aspect)), Image.LANCZOS)
+            out = im.resize((w, round(w / ratio)), Image.LANCZOS)
             if im.width / w >= 1.5:  # only restore crispness lost to a real downscale
                 out = out.filter(ImageFilter.UnsharpMask(radius=1, percent=45, threshold=2))
             out.save(os.path.join(OUT, f'{name}-{w}.webp'), 'WEBP', quality=72, method=6)

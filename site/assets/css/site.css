@@ -483,7 +483,7 @@ button.text-link { padding: 0; border: 0; background: none; cursor: pointer; }
   border: 0; border-radius: var(--radius); background: var(--color-dark-800); color: var(--color-on-dark); cursor: pointer;
 }
 .project-dialog__close:hover { background: var(--color-dark-700); }
-.project-dialog__main img { width: 100%; aspect-ratio: 3 / 2; max-height: 58vh; max-height: 58svh; object-fit: cover; background: var(--color-paper-3); }
+.project-dialog__main img { width: 100%; aspect-ratio: 3 / 2; max-height: 58vh; max-height: 58svh; object-fit: contain; background: var(--color-paper-3); }
 .project-dialog__thumbs { display: flex; gap: var(--space-2); padding: var(--space-3) var(--space-6) 0; list-style: none; }
 .project-dialog__thumbs button { padding: 0; border: 2px solid transparent; border-radius: var(--radius-sm); background: none; cursor: pointer; }
 .project-dialog__thumbs button[aria-current="true"] { border-color: var(--color-dark-800); }
