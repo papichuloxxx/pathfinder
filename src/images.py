@@ -32,14 +32,10 @@ IMAGES = [
     ('about', '2021/03/DSC01074.jpg', CARD, [480, 800, 1200], (0.42, 0.5), None),
     ('mfg-yard', '2025/04/IMG-20250405-WA0026.jpg', CARD, [480, 800, 1020], (0.5, 0.5), None),
 
-    # Recent work (September 2026 photos). Each project's best photo comes first.
-    ('proj-presbyterian-1', 'recent-work/presbyterian/01.jpg', PROJECT, [480, 756], (0.5, 0.42), None),
-    ('proj-presbyterian-2', 'recent-work/presbyterian-more/05.jpg', PROJECT, [480, 1000], (0.5, 0.5), None),
-    ('proj-presbyterian-3', 'recent-work/presbyterian/06.jpg', PROJECT, [480, 756], (0.5, 0.55), None),
-    ('proj-presbyterian-4', 'recent-work/presbyterian/03.jpg', PROJECT, [480, 756], (0.5, 0.5), None),
-    ('proj-presbyterian-5', 'recent-work/presbyterian/11.jpg', PROJECT, [480, 756], (0.5, 0.5), None),
-    ('proj-presbyterian-6', 'recent-work/presbyterian-more/02.jpg', PROJECT, [480, 1000], (0.5, 0.5), None),
-    ('proj-presbyterian-7', 'recent-work/presbyterian/05.jpg', PROJECT, [480, 756], (0.5, 0.6), None),
+    # Recent work (September 2026 photos; Presbyterian replaced October 2026). Each project's best photo comes first.
+    ('proj-presbyterian-1', 'recent-work/presbyterian-new/02.jpg', PROJECT, [480, 756], (0.5, 0.5), None),
+    ('proj-presbyterian-2', 'recent-work/presbyterian-new/01.jpg', PROJECT, [480, 810], (0.5, 0.45), None),
+    ('proj-presbyterian-3', 'recent-work/presbyterian-new/03.jpg', PROJECT, [480, 810], (0.5, 0.55), None),
     ('proj-greystone-1', 'recent-work/greystone-park/02.jpg', PROJECT, [480, 1008], (0.5, 0.5), None),
     ('proj-greystone-2', 'recent-work/greystone-park/03.jpg', PROJECT, [480, 1008], (0.5, 0.5), None),
     ('proj-greystone-3', 'recent-work/greystone-park/01.jpg', PROJECT, [480, 1008], (0.5, 0.5), None),
@@ -64,7 +60,6 @@ IMAGES = [
 
     ('proj-adelaide-park', '2025/04/PATHFINDER.png', PROJECT, [480, 750], (0.5, 0.5), BAND),
     ('proj-kambuzuma', '2025/04/IMG-20250410-WA0002.jpg', PROJECT, [480, 735], (0.5, 0.6), None),
-    ('proj-presbyterian-paving', '2025/06/PATHFINDER-5.png', PROJECT, [480, 750], (0.5, 0.5), BAND),
     ('proj-car-park', '2025/04/WhatsApp-Image-2025-03-07-at-08.53.04_6e685c88-Copy.jpg', PROJECT, [480, 1000], (0.5, 0.5), None),
     ('proj-car-park-2', '2025/04/WhatsApp-Image-2025-01-29-at-04.55.44-Copy.jpg', PROJECT, [480, 750], (0.5, 0.55), None),
     ('proj-tarmac-driveway', '2025/04/IMG-20250415-WA0137.jpg', PROJECT, [480, 1008], (0.5, 0.5), None),

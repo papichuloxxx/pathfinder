@@ -2,47 +2,26 @@
   {
     "id": "presbyterian-church",
     "title": "Presbyterian Church in Southern Africa",
-    "service": "Paving and tarmac car park",
+    "service": "Interlocking brick paving",
     "location": "Highlands, Harare",
     "categories": [
-      "paving",
-      "tarmac"
+      "paving"
     ],
     "images": [
       {
-        "name": "proj-presbyterian-2",
-        "alt": "Rollers compacting new tarmac in front of the Presbyterian church"
-      },
-      {
         "name": "proj-presbyterian-1",
-        "alt": "Newly marked parking bays on the tarmac car park beside the church"
+        "alt": "New interlocking paving at the church entrance gate, with the last pavers stacked ready to lay"
       },
       {
-        "name": "proj-presbyterian-4",
-        "alt": "White bay markings meeting at a lamp post on the new tarmac car park"
+        "name": "proj-presbyterian-2",
+        "alt": "Finished interlocking paving running to the road, with a new drainage channel across the entrance"
       },
       {
         "name": "proj-presbyterian-3",
-        "alt": "Tarmac access road with painted markings between church buildings"
-      },
-      {
-        "name": "proj-presbyterian-5",
-        "alt": "Pedestrian crossing markings on the new tarmac outside a church hall"
-      },
-      {
-        "name": "proj-presbyterian-6",
-        "alt": "Pathfinder crew and rollers finishing the tarmac car park"
-      },
-      {
-        "name": "proj-presbyterian-7",
-        "alt": "Marked tarmac parking bays meeting a paved edge under trees"
-      },
-      {
-        "name": "proj-presbyterian-paving",
-        "alt": "Close-up of the paving laid at the church premises"
+        "alt": "Interlocking paving edged with kerbing along the fence line beside a garden bed"
       }
     ],
-    "description": "Paving and a tarmac car park for church premises, finished with painted bays and markings."
+    "description": "Interlocking brick paving for the church entrance, with kerbing along the fence line and a drainage channel at the gate."
   },
   {
     "id": "greystone-park",
